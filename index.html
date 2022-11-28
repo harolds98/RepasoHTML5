@@ -1,0 +1,95 @@
+<!--*las cosas que se hacen con html no tienen que ser visuales si no estrucuradas ya todo el
+diseño se hace con CSS, lo mejor es no intentar que se mira bonito con html-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repaso</title>
+    <link rel="icon" href="/multimedia/icono.ico">
+</head>
+
+<body>
+
+    <center>
+        <!--?center centra todo lo que este adentro de el pero no las cajas hijas no se recomienda ya que esto se hace en css-->
+        <h1>Etiqueta principal h1 para titulos</h1>
+    </center>
+    <h2>Etiqueta h2</h2>
+    <h3>Etiqueta h3</h3>
+    <p>esto es un parrafo aqui podemos acomodar cualquier parrafo para nuestra pagina web</p>
+    <b>esto es letra en negrilla </b>
+    <br> <!-- *genera un espacio en blanco -->
+    <i>letra italica es un poco inclinada</i>
+    <br>
+    <strike>un tipo de letra muy poco utilizada para tachar la letra</strike>
+    <br>
+    <small>para colocar textos pequeños</small>
+    <br>
+    <a href="https://www.linkedin.com/in/harold-sanchez-b8b835258/">enlaces externos ejemplo (linkedin)</a>
+    <br>
+    <a href="pagina2.html">enlace interno (pagina 2)</a>
+    <br>
+    <a href="carpeta interna/pagina3.html">enlace interno a una carpeta (pagina 3)</a>
+    <br>
+    <a href="/pagina4.html"><b>pagina 4</b></a>
+    <p>si quiere mas informacion has <a href="https://www.youtube.com/channel/UC8J-OqZJfHYj6FFc5cNMRDg">click aqui</a>
+        para
+        ir a mi canal. <br>donde encontraras temas de programacion</p>
+    <p>entra a un <a href="https://www.google.com" target="_blank">enlace, en este caso (google)</a> en una ventana
+        emergente</p>
+
+    <h2>formularios</h2>
+
+    <form>
+
+        <label for="nombre">usuario</label>
+        <!-- ?label funciona para ponerle nombre a los input-->
+        <input type="text" id="nombre" required>
+        <!--todo el requierd es para llenar obligatoriamente el campo-->
+
+        <label for="contraseña">password</label>
+        <input type="password" id="contraseña" required>
+
+        <input type="number">
+        <input type="email">
+        <input type="range" min="1" max="4">
+        <input type="date">
+        <!--fecha-->
+        <input type="button" value="boton hs" onclick="alert('esto es una alerta del boton')">
+        <textarea readonly>hola bb aqui se pueden guardar algunos mensajes para los usuarios</textarea>
+        <input type="submit">
+        <!-- !crea un boton para enviar el formulario-->
+
+        <br><br>
+
+
+        <label for="color">Elige un color</label>
+        <select id="color " name="color" size="2">
+            <!--size es para ver la cantidad de opciones en este caso rojo y amarillo -->
+            <option>Rojo</option>
+            <option>Amarillo</option>
+            <option> Verde</option>
+        </select>
+        <br><br><br>
+
+        <!-- el datalist es como el select pero aqui se pueden digitar tambien valores diferentes -->
+        <input list="colores ">
+        <datalist id="colores ">
+            <option>Rojo</option>
+            <option>Verde </option>
+            <option>Amarillo</option>
+            <option>Rosa</option>
+            <option>Negro</option>
+        </datalist>
+
+
+    </form>
+
+
+</body>
+
+</html>
